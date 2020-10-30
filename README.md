@@ -33,3 +33,7 @@
   
     - rails server
 
+## Rubycritic
+
+![alt text](https://github.com/WesleyVitor/Colchonet/public/main/rubycritic.png?raw=true)
+
