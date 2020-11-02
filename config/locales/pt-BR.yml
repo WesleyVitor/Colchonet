@@ -1,4 +1,23 @@
 pt-BR:
+  users:
+    new:
+      title: Cadastro
+    edit:
+      title: Editar Perfil
+    show:
+      title: "Perfil: %{user_name}"
+      edit: "Editar perfil"
+      location: "Localização: %{location}"
+      bio: "Bio: %{bio}"
+
+  links:
+    back: Voltar
+  layout:
+    rooms: Quartos
+    signup: Cadastro
+  general:
+    form_error: "Existem Erros no seu formulário"
+
   activerecord:
     models:
       user: Usuário
