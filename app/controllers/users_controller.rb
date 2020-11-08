@@ -6,8 +6,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(valid_params)
     if @user.save
-      redirect_to @user,
-                :notice => 'Cadastro criado com sucesso!'
+      SignupMailer.confirm_email(@user).deliver_now
+      redirect_to root_path
     else
       render :new
     end
