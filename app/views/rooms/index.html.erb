@@ -11,18 +11,22 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
+<%= paginate @rooms %>
   <tbody>
-    <% @rooms.each do |room| %>
-      <tr>
-        <td><%= room.title %></td>
-        <td><%= room.location %></td>
-        <td><%= room.description %></td>
-        <td><%= link_to 'Show', room %></td>
-        <td><%= link_to 'Edit', edit_room_path(room) %></td>
-        <td><%= link_to 'Destroy', room, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+      <% @rooms.each do |room| %>
+        <tr>
+          <td><%= room.title %></td>
+          <td><%= room.location %></td>
+          <td><%= room.description %></td>
+          <td><%= link_to 'Show', room %></td>
+          <td><%= link_to 'Edit', edit_room_path(room) %></td>
+          <td><%= link_to 'Destroy', room, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+  
+
+
+  
   </tbody>
 </table>
 
