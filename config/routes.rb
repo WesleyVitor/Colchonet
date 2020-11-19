@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   resource :confirmation, :only => [:show]
   
+  resource :user_sessions, :only => [:create, :new, :destroy]
   
   root :to => "home#index"
   
